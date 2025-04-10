@@ -5,6 +5,15 @@
    --background-rgb: 0, 0, 0;
 }
 
+@theme inline {
+   --color-primary: #00e7f9;
+   --color-secondary: #fc004e;
+   --font-figtree: var(--font-figtree);
+   --font-urbanist: var(--font-urbanist);
+   --drop-shadow: 0 4px 4px #fc004e;
+   --color-gray: #ababab;
+}
+
 body {
    color: rgb(var(--foreground-rgb));
    background: rgb(var(--background-rgb));
@@ -29,6 +38,12 @@ h6 {
 @layer utilities {
    .text-balance {
       text-wrap: balance;
+   }
+   .gradient-banner {
+      background: linear-gradient(to right, #fc004e, #10cbe0);
+   }
+   .glow {
+      box-shadow: 5px 5px 5px 1px #00e8f973;
    }
 }
 

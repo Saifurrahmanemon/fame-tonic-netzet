@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
-import { Montserrat } from "next/font/google";
+import { Figtree, Urbanist } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 
-// Initialize the Montserrat font with the weights we need
-const montserrat = Montserrat({
-   subsets: ["latin"],
-   weight: ["400", "500", "600", "700", "800", "900"],
-   variable: "--font-montserrat",
-   display: "swap",
+const figtree = Figtree({
+   variable: "--font-figtree",
+});
+
+const urbanist = Urbanist({
+   variable: "--font-urbanist",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +20,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
    return (
       <html lang="en">
          <body
-            className={`${montserrat.variable} font-sans bg-black text-white`}
+            className={`${figtree.variable} ${urbanist.variable} antialiased`}
          >
             {children}
          </body>

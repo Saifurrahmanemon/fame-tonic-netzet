@@ -1,5 +1,3 @@
-"use client";
-
 import { Hero } from "../home/hero";
 import { Footer } from "../layout/footer";
 import { Header } from "../layout/header";

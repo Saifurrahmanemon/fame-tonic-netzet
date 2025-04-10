@@ -8,7 +8,6 @@ export const metadata: Metadata = {
    openGraph: {
       title: "Fametonic - Turn Social Media Into a Profitable Career",
       description: "Discover your way to success with Fametonic",
-      images: [{ url: "/og-image.jpg" }],
    },
 };
 

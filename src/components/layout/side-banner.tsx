@@ -4,7 +4,7 @@ export function SaleBanner() {
          className="gradient-banner py-2 px-4 text-center"
          data-testid="sale-banner"
       >
-         <p className="text-xs md:text-xl font-semibold">
+         <p className="text-base md:text-xl font-semibold">
             🚀{" "}
             <span className="text-primary font-figtree">
                FRESH BEGINNINGS SALE:
